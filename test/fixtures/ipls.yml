@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  founder: MyString
+  founded: 1
+
+two:
+  founder: MyString
+  founded: 1
