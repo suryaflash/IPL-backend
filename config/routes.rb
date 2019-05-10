@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
 	post 'user/signin' , to:'user#signin'  
 
+	
+
 
 	            #           GET    /teams(.:format)               teams#index
                 #           POST   /teams(.:format)               teams#create
