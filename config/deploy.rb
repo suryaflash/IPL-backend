@@ -4,9 +4,9 @@ lock "~> 3.11.0"
 set :application, 'iplapp'
 set :repo_url, 'https://github.com/suryaflash/IPL-backend.git' # Edit this to match your repository
 set :branch, :master
-set :deploy_to, '/home/ubuntu/iplapp'
+set :deploy_to, '/var/www/iplapp'
 set :pty, true
-set :linked_files, %w{config/database.yml config/application.yml}
+set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :keep_releases, 5
 set :rvm_type, :user
@@ -30,7 +30,7 @@ set :puma_preload_app, false
 
 
 
-append :linked_files, "config/database.yml", "config/secrets.yml"
+# append :linked_files, "config/database.yml", "config/secrets.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 
